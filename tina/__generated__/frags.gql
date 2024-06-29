@@ -1,0 +1,101 @@
+fragment PageParts on Page {
+  title
+  blocks {
+    __typename
+    ... on PageBlocksWelcomeHero {
+      message
+      links {
+        __typename
+        link
+        label
+        style
+      }
+    }
+    ... on PageBlocksFeatureList {
+      byline
+      message
+      features {
+        __typename
+        icon
+        label
+        description
+      }
+    }
+    ... on PageBlocksFeaturedReading {
+      label
+      featuredPost {
+        ... on Post {
+          title
+          author {
+            ... on Author {
+              name
+              image
+            }
+            ... on Document {
+              _sys {
+                filename
+                basename
+                breadcrumbs
+                path
+                relativePath
+                extension
+              }
+              id
+            }
+          }
+          image
+          description
+          body
+        }
+        ... on Document {
+          _sys {
+            filename
+            basename
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+      }
+    }
+  }
+}
+
+fragment PostParts on Post {
+  title
+  author {
+    ... on Author {
+      name
+      image
+    }
+    ... on Document {
+      _sys {
+        filename
+        basename
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+  }
+  image
+  description
+  body
+}
+
+fragment AuthorParts on Author {
+  name
+  image
+}
+
+fragment NavParts on Nav {
+  links {
+    __typename
+    label
+    link
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: Hello
 blocks:
-  - message: "#\n\n# Share the\_**drama!**\n\nConnect, Communicate, and Create Memorable Moments with Llama Video Calls\n"
+  - message: "# Talk to llama,\n\n# Share the\_**drama!**\n\nConnect, Communicate, and Create Memorable Moments with Llama Video Calls\n"
     links:
       - link: /
         label: Get Started
@@ -20,9 +20,6 @@ blocks:
       conversation should be an extraordinary experience, and what better way to
       add a dash of excitement than by introducing llamas into the mix?
     features:
-      - icon: BallStar
-        label: TEst for Kevin
-        description: This is a test
       - icon: ChatBubbles
         label: LlamaLink App
         description: >-
@@ -55,9 +52,6 @@ blocks:
     featuredPost: content/posts/call-themes.md
     _template: featuredReading
 ---
-
-
-
 
 
 

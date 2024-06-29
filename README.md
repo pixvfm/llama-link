@@ -1,7 +1,5 @@
 ## Getting started
 
-## change for deploy
-
 ```
 npm install
 ```
