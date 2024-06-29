@@ -1,6 +1,6 @@
 ---
 links:
-  - label: learn
+  - label: Learn
     link: /learn
   - label: Home
     link: /
